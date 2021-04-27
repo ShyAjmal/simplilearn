@@ -27,7 +27,7 @@ public class FileOperations {
 	}
 	
 	public void search(File dir) {
-		System.out.println("Please enter your filename to search :");
+		System.out.println("Please enter your file name to search :");
 
 		Scanner scan = new Scanner(System.in);
 		String fileName = scan.next();	
@@ -48,7 +48,7 @@ public class FileOperations {
 }
 
 	public void addFile(File dir) {
-		System.out.println("Please enter your filename to create :");
+		System.out.println("Please enter your file name to create :");
 
 		Scanner scan = new Scanner(System.in);
 		String fileName = scan.next();		
@@ -66,7 +66,7 @@ public class FileOperations {
 		
 }
 	public void deleteFile(File dir) {
-		System.out.println("Please enter your filename to delete :");
+		System.out.println("Please enter your file name to delete :");
 
 		Scanner scan = new Scanner(System.in);
 		String fileName = scan.next();		
@@ -82,7 +82,7 @@ public class FileOperations {
 			      }
 			   }else{
 		
-				 System.out.println(fileName + " Not Found");
+				 System.out.println(fileName + " not found");
 
 			}
 		} catch (IOException e) {

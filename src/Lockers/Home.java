@@ -8,6 +8,7 @@ public class Home {
 	
    static File folder;
    static Boolean  flagFileOps = false;
+   static Boolean  exitApp = false;
     
 	public  static void  projectDetails() {
 		System.out.println("********************************************************");
@@ -85,10 +86,11 @@ public class Home {
 	
 		projectDetails();
 		int option  = 0;
-		option = getNextOption();
+		    option = getNextOption();
 			FileOperations fileOps = new FileOperations();		
 			
-			while (true) {															
+			while (exitApp == false) {	
+			
 				switch (option) {				
 				case 1:
 						
@@ -140,7 +142,8 @@ public class Home {
 				case 3:
 
 					folder = null;
-					option = getNextOption();
+					exitApp = true;
+					System.out.println("Application closed");
 					break;
 
 				default:
